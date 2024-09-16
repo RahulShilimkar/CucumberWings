@@ -1,5 +1,18 @@
 Feature: Application Login
 
+Background:
+	Given setup the entries in Database
+	When user launches the browser from config url
+	And hit the home page url of banking site
+
+#Scope of backround is only in the feature file
+#Background: 
+#	Given setup the entries in Database
+#	When user launches the browser from config url
+#	And hit the home page url of banking site
+	
+	
+
 @SmokeTest @RegressionTest
 Scenario: Admin Page default login
 	Given User is on Netbanking login page

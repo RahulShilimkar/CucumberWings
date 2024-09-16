@@ -8,6 +8,25 @@ import io.cucumber.java.en.When;
 
 public class Steps {
 	
+	 @Given("setup the entries in Database")
+	 public void on_setup()
+	 {
+		 System.out.println("********************************");
+		 System.out.println("Setting the entry in DB");
+	 }
+	 
+	 @When("user launches the browser from config url")
+	 public void config_url()
+	 {
+		 System.out.println("Configured the URL in browser launch");
+	 }
+	 
+	 @When("hit the home page url of banking site")
+	 public void hit_home_page()
+	 {
+		 System.out.println("Hitting the home page url");
+	 }
+	
 	 @Given("User is on Netbanking login page")
 	 public void user_is_on_netbanking_login_page() {
 	     System.out.println("User is on Netbanking login page");
