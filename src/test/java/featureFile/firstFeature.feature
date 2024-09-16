@@ -1,11 +1,13 @@
 Feature: Application Login
 
+@SmokeTest @RegressionTest
 Scenario: Admin Page default login
 	Given User is on Netbanking login page
 	When User login into application with username "admin" and password "1234"
 	Then Home Page is displayed
 	And Cards are displayed
 
+@DataTest @RegressionTest
 #DataDrivenTesting -> used in cases like forms,etc having more details
 Scenario: User page data fill up
 	Given User is on practice landing page
@@ -17,6 +19,7 @@ Scenario: User page data fill up
 	Then Home Page is displayed
 	And Cards are displayed 
 
+@MultiTest
 #Using Scenario Outline and Regex, where there are multiple using for  a same flow using Parameterization
 Scenario Outline: Client Page default login 
 	Given User is on Netbanking login page
