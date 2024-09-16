@@ -4,11 +4,11 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		features="src/test/java/featureFile",
+		features="src/test/java/featureFile/HooksFeature.feature",
 		glue="stepDefinitions",
-		monochrome=true,
+		monochrome=true
 //		tags="not @RegressionTest"
-		tags="@SmokeTest or @RegressionTest"
+		//tags="@SmokeTest or @RegressionTest"
 //		tags="@SmokeTest and @RegressionTest"
 		)
 
